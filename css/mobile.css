@@ -1,0 +1,235 @@
+@media (max-width: 1200px) {
+    .header{
+        /* position: fixed;
+        background: var(--white); */
+    }
+
+    .sidebar{
+        position: fixed;
+        z-index: 999;
+        top: 80px;
+        right: -100%;
+        flex-direction: column;
+        width: 40%;
+        background: var(--white);
+        border-top: 2px solid var(--darker-main-color);
+        padding: 20px 0px;
+        font-size: 25px;
+    }
+
+    .sidebar li{
+        margin: 10px 0px;
+        font-weight: 600;
+    }
+
+    .sidebar.active{
+        right: 0;
+    }
+    
+    .toggle {
+        width: 40px;
+        height: 40px;
+        background: url(../images/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+        transition: 00.1s;
+    }
+    .toggle.active {
+        background: url(../images/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+
+    .roadmap{
+        padding: 100px 20px;
+    }
+
+    .tokenomics{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tokenomic h1{
+        font-size: 30px;
+    }
+
+    .tokenomic h3{
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 980px) {
+    .section-1-img{
+        display: none;
+    }
+}
+
+@media (max-width: 820px){
+    .about-section{
+        flex-direction: column;
+    }
+
+    .about-section-text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .trades-section{
+        margin: 0px 100px;
+    }
+
+    .roadmap{
+        font-size: 0.6em;
+    }
+
+    .tokenomic{
+        font-size: 0.5em;
+    }
+
+    .tokenomic h1{
+        font-size: 20px;
+    }
+
+    .tokenomic h3{
+        font-size: 16px;
+    }
+
+    .footer-section-1{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 720px){
+    .section-1-texts{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-1-texts>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center
+    }
+
+    .tokenomics{
+        padding: 80px 0px;
+    }
+
+    .tokenomic h2{
+        font-size: 25px;
+    }
+
+    .section-1-buy-wrap{
+        flex-direction: column;
+    }
+
+    .section-1-buy{
+        width: 280px;
+    }
+}
+
+@media (max-width: 480px){
+    .header{
+        padding: 10px;
+    }
+
+    .sidebar{
+        width: 60%;
+    }
+
+    .section-1{
+        padding: 120px 15px;
+    }
+
+    .section-1-social{
+        position: fixed;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--main-color);
+        font-size: 20px;
+        color: var(--black);
+        transition: 0.2s;
+        border-radius: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        z-index: 999999999;
+        border-top: 1px solid var(--darker-main-color);
+    }
+
+    .about-section{
+        padding: 30px 10px 20px 10px;
+    }
+    
+    .section-1-social>a{
+        transition: 0.2s;
+    }
+
+    .trades-section{
+        margin: 0px 20px;
+    }
+
+    .whitepaper{
+        padding: 10px;
+    }
+
+    .audits{
+        flex-wrap: wrap;
+    }
+
+    .audits a{
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+    }
+
+    .roadmap{
+        padding: 60px 0px;
+    }
+
+    .map-labels{
+        display: none;
+    }
+
+    .maps{
+        flex-wrap: wrap;
+    }
+
+    .map{
+        width: 45%;
+        padding: 5px;
+        margin: 5px;
+        word-wrap: break-word;
+    }
+
+    .tokenomics{
+        padding: 0px;
+    }
+
+    .tokenomic{
+        width: 45%;
+        margin: 25px 5px;
+        padding: 60px 40px 20px 40px;
+    }
+
+    .footer{
+        padding: 100px 0px 60px 0px;
+        border-radius: 0px;
+    }
+
+    .footer-section-1{
+        padding: 0px 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
